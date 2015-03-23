@@ -1,0 +1,10 @@
+# !/bin/bash
+
+function sendimac(){
+    scp -rp $1 admin@hlt063.cse.ust.hk:~/toBedeleted/
+}
+
+function getimac(){
+    file_path="admin@hlt063.cse.ust.hk:$1"
+    scp -rp $file_path ~/toBeDeleted/
+}
