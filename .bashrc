@@ -30,3 +30,17 @@ alias enw='emacs -nw'
 alias ec='emacsclient -t'
 alias lt='ls -lt'
 source ~/.myFunc
+
+alias ls='ls -G'
+alias ll='ls -hl'
+alias l='ls -hla'
+
+alias hl3='ssh linlin@hltpsvr3.cse.ust.hk'
+alias hl1='ssh linlin@hltpsvr1a.cse.ust.hk'
+alias hl2='ssh linlin@hltpsvr2.cse.ust.hk'
+alias hl0='ssh root@hlt056.cse.ust.hk'
+###############################################################
+#set fileencodings=utf-8,usc-bom,gb18030,gbk,gb2312,cp936
+#set termencoding=utf-8
+#set encoding=utf-8
+
