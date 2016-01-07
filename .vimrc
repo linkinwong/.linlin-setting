@@ -1,7 +1,7 @@
 
 set term=xterm-256color
 
-se nu
+" se nu
 syntax on
 syntax enable
 set autoread
