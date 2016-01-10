@@ -39,8 +39,36 @@ alias hl3='ssh linlin@hltpsvr3.cse.ust.hk'
 alias hl1='ssh linlin@hltpsvr1a.cse.ust.hk'
 alias hl2='ssh linlin@hltpsvr2.cse.ust.hk'
 alias hl0='ssh root@hlt056.cse.ust.hk'
-###############################################################
-#set fileencodings=utf-8,usc-bom,gb18030,gbk,gb2312,cp936
-#set termencoding=utf-8
-#set encoding=utf-8
+##########################################################################
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+# set a fancy prompt (non-color, unless we know we "want" color)
 
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+#
+#if [ "$color_prompt" = yes ]; then
+#  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+#  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
+#unset color_prompt force_color_prompt
+#
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+  #alias dir='dir --color=auto'
+  #alias vdir='vdir --color=auto'
+
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
+fi
+
+##########################################################################
